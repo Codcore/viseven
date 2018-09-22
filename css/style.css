@@ -1,0 +1,228 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+ ul{
+ 	list-style-type: none;
+ }
+
+body{
+	background-color: #f5fcff;
+}
+
+.clear{
+	clear: both;
+}
+
+.header{
+	z-index: -2;
+	background-image: url(../img/bg-header.png);
+	width: 100%;
+	height: 220px;
+}
+
+.header__profile{
+	height: 100%;
+}
+
+.container{
+	width: 1200px;
+	margin: auto;
+}
+
+.header__profile-avatar{
+	position: relative;
+	display: inline-block;
+	padding: 0px;
+	float: left;
+	z-index: 200;
+}
+
+.header__profile-menu{
+	position: relative;
+	z-index: 100;
+	left: -95px;
+	top: 42px;
+	display: inline-block;
+	height: 97px;
+	width: 710px;
+	background: #fff;
+	border-radius: 0px 49px 49px 0px;
+	padding: 15px 0px 0px 135px;
+}
+
+.header__profile-menu{
+	font-family: 'Raleway';
+	font-size: 16px
+}
+
+.header__profile-menu h1{
+	font-family: 'Raleway Bold';
+	font-size: 36px;
+}
+
+.header__profile-menu li{
+	display: inline-block;
+	padding: 0px 25px 15px 0px;
+	color: #969696;
+}
+
+.header__profile-menu li img{
+	background-color: #ffffff;
+	padding: 15px 15px 0px 0px;
+	vertical-align: bottom;
+}
+
+
+.header__menu-item{
+	display: inline-block;
+	width: 240px;
+	height: 100px;
+	font-family: 'Bebas Neue Regular';
+	font-size: 36px;
+}
+
+.header__menu-item--active{
+	width: 230px;
+	height: 98px;
+	background-color: #f1f1f3;
+	font-family: 'Bebas Neue Regular';
+	font-size: 36px;
+}
+
+.header__menu-item--active-wrapper{
+	display: inline-block;
+	width: 230px;
+	height: 100px;
+	background-color: #5fc0e7;
+}
+
+.header__menu a{
+   color: #000;
+}
+
+.header__menu-item p{
+	display: inline-block;
+	padding: 41px 81px 32px 81px;
+}
+
+.header__menu-item--active p{
+	display: inline-block;
+	padding: 41px 81px 32px 81px;
+}
+
+.column{
+	width: 600px;
+	float: left;
+}
+
+.content{
+	margin: 50px 0;
+}
+
+.people:before{
+    margin: -30px -25px;
+	content: '';
+	display: block;
+	background-color: #5fc0e7;
+	border-radius: 15px 15px 0 0;
+	height: 6px;
+}
+
+.content__card{
+	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px 15px 15px 15px;
+	padding: 30px 0 30px 20px;
+	overflow: hidden;
+}
+
+.right{
+	margin: 0 0 30px 10px;
+}
+
+.left{
+	margin: 0 10px 30px 0px;
+}
+
+.content__card-title{
+	margin: 66px 0 4px 0;
+	font-family: 'Bebas Neue Regular';
+	font-size: 30px;
+	clear: both;
+}
+
+.content__card-paragraph{
+	display: inline-block;
+	margin: 32px 0 7px;
+	font-family: 'Raleway Bold';
+	font-size: 18px;
+}
+
+.content__card p{
+	display: block;
+	font-family: 'Raleway';
+	font-size: 18px;
+}
+
+.wrapper{
+	height: auto;
+	width: 100%;
+}
+
+.content__card img{
+	display: inline-block;
+	padding: 9px 15px 0 0;
+}
+
+.content__card img.pencil{
+	width: 14px;
+	height: 14px;
+	padding: 0 5px 0 0;
+}
+
+.content__card a.view{
+	display: inline-block;
+	color: #5FC0E7;
+	font-family: 'Raleway';
+	font-size: 14px;
+	text-align: right;
+	float: right;
+	margin: 32px 30px 7px;
+}
+
+.content__card a {
+	font-size: 14px;
+	font-family: 'Raleway';
+	color: #5fc0e7;
+	display: inline-block;
+    margin-top: 30px;
+}
+
+.work:before{
+	margin: -30px -25px;
+	content: '';
+	display: block;
+	background-color: #7c4098;
+	border-radius: 15px 15px 0 0;
+	height: 6px;
+}
+
+.story:before{
+	margin: -30px -25px;
+	content: '';
+	display: block;
+	background-color: #fa5770;
+	border-radius: 15px 15px 0 0;
+	height: 6px;
+}
+
+.edocation:before{
+	margin: -30px -25px;
+	content: '';
+	display: block;
+	background-color: #f26632;
+	border-radius: 15px 15px 0 0;
+	height: 6px;
+}
