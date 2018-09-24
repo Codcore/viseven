@@ -2,11 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- Live Reload -->
-    <script>
-        document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
-    </script>
-    <!-- Live Reload -->
+
     <meta charset="UTF-8">
     <title>Andrew Sokolovsky</title>
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
@@ -35,14 +31,12 @@
 
 <nav class="header__menu">
     <div class="container">
+            <a href="index.html"><div class="header__menu-item"><p>ABOUT</p></div></a>
         <div class="header__menu-item--active-wrapper">
-            <a href="index.html">
-                <div class="header__menu-item--active"><p>ABOUT</p></div>
-            </a>
-        </div>
         <a href="photos.html">
-            <div class="header__menu-item"><p>PHOTOS</p></div>
+            <div class="header__menu-item--active"><p>PHOTOS</p></div>
         </a>
+        </div>
     </div>
     <div class="clear"></div>
 </nav>
@@ -61,19 +55,67 @@
 
 <div class="container">
 <div class="gallery__content">
-        <div class="gallery__content-img"><img src="img/gallery/casey-horner-487085-unsplash.png" alt=""></div>
-        <div class="gallery__content-img"><img src="img/gallery/jon-tyson-533596-unsplash.png" alt=""></div>
-        <div class="gallery__content-img"><img src="img/gallery/clement-m-429812-unsplash_(1).png" alt=""></div>
-        <div class="gallery__content-img"><img src="img/gallery/justin-kauffman-449060-unsplash.png" alt=""></div>
-        <div class="gallery__content-img"><img src="img/gallery/jakob-owens-423014-unsplash.png" alt=""></div>
-        <div class="gallery__content-img"><img src="img/gallery/eberhard-grossgasteiger-421475-unsplash.png" alt=""></div>
-        <div class="gallery__content-img"><img src="img/gallery/henry-be-341670-unsplash_(1).png" alt=""></div>
-        <div class="gallery__content-img"><img src="img/gallery/hugues-de-buyer-mimeure-335733-unsplash.png" alt=""></div>
-        <div class="gallery__content-img"><img src="img/gallery/philippe-toupet-320689-unsplash.png" alt=""></div>
-        <div class="gallery__content-img"><img src="img/gallery/luca-bravo-177552-unsplash.png" alt=""></div>
-        <div class="gallery__content-img"><img src="img/gallery/paul-morris-116514-unsplash.png" alt=""></div>
-        <div class="gallery__content-img"><img src="img/gallery/anton-repponen-103080-unsplash.png" alt=""></div>
+        <div class="gallery__content-img">
+            <img src="img/gallery/casey-horner-487085-unsplash.png" alt="" class="gallery_img">
+            <div class="gallery__content-img--overlay"></div>
+        </div>
+        <div class="gallery__content-img">
+            <img src="img/gallery/jon-tyson-533596-unsplash.png" alt="" class="gallery_img">
+            <div class="gallery__content-img--overlay"></div>
+        </div>
+        <div class="gallery__content-img">
+            <img src="img/gallery/clement-m-429812-unsplash_(1).png" alt="" class="gallery_img">
+            <div class="gallery__content-img--overlay"></div>
+        </div>
+        <div class="gallery__content-img">
+            <img src="img/gallery/justin-kauffman-449060-unsplash.png" alt="" class="gallery_img">
+            <div class="gallery__content-img--overlay"></div>
+        </div>
+        <div class="gallery__content-img">
+            <img src="img/gallery/jakob-owens-423014-unsplash.png" alt="" class="gallery_img">
+            <div class="gallery__content-img--overlay"></div>
+        </div>
+        <div class="gallery__content-img">
+            <img src="img/gallery/eberhard-grossgasteiger-421475-unsplash.png" alt="" class="gallery_img">
+            <div class="gallery__content-img--overlay"></div>
+        </div>
+        <div class="gallery__content-img">
+            <img src="img/gallery/henry-be-341670-unsplash_(1).png" alt="" class="gallery_img">
+            <div class="gallery__content-img--overlay"></div>
+        </div>
+        <div class="gallery__content-img">
+            <img src="img/gallery/hugues-de-buyer-mimeure-335733-unsplash.png" alt="" class="gallery_img">
+            <div class="gallery__content-img--overlay"></div>
+        </div>
+        <div class="gallery__content-img">
+            <img src="img/gallery/philippe-toupet-320689-unsplash.png" alt="" class="gallery_img">
+            <div class="gallery__content-img--overlay"></div>
+        </div>
+        <div class="gallery__content-img">
+            <img src="img/gallery/luca-bravo-177552-unsplash.png" alt="" class="gallery_img">
+            <div class="gallery__content-img--overlay"></div>
+        </div>
+        <div class="gallery__content-img">
+            <img src="img/gallery/paul-morris-116514-unsplash.png" alt="" class="gallery_img">
+            <div class="gallery__content-img--overlay"></div>
+        </div>
+        <div class="gallery__content-img">
+            <img src="img/gallery/anton-repponen-103080-unsplash.png" alt="" class="gallery_img">
+            <div class="gallery__content-img--overlay"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="popup" id="popup">
+    <div class="popup__overlay"></div>
+    <div class="popup__img-wrapper">
+        <img id="popup_img" src="" alt="" class="popup__img">
+        <button class="popup__close" aria-label="close">
+            <img src="./img/icons/close.png" alt="close">
+        </button>
     </div>
 </div>
 </body>
+<script src="js/popup.js"></script>
 </html>
