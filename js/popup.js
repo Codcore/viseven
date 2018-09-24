@@ -12,6 +12,9 @@ images.forEach(function (image) {
 });
 
 function popup(image) {
-    document.getElementById("popup_img").src = image.querySelector(".gallery_img").src;
+
+    var popup_img = document.getElementById("popup_img");
+    popup_img.src = '';
+    popup_img.src = image.querySelector(".gallery_img").src.split(".")[0]+"_big.jpg";
     document.getElementById("popup").style.visibility = "visible";
 }
